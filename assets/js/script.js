@@ -47,3 +47,10 @@ $('.saveBtn').on("click", function () {
     var time = $(this).parent().attr("id");
     localStorage.setItem(time, text);
 });
+
+// clear all tasks
+
+$('.btn-danger').on("click", function () {
+    localStorage.clear();
+    location.reload();
+});
